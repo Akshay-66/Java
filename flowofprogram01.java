@@ -8,7 +8,7 @@ public class flowofprogram01 {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the Year to check: ");
         int year = in.nextInt();
-        if(year%4==0){
+        if(year%4==0 && year%400==0 || year%100!=0){
             System.out.println(year+" is a leap year");
         }
         else{
